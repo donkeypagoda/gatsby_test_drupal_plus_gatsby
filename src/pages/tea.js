@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Img from 'gatsby-image';
 
 const TeaPage = ({data}) => (
@@ -14,6 +14,9 @@ const TeaPage = ({data}) => (
         </div>
       </div>
     ))}
+    <div>
+      <Link to="/">Back to home page</Link>
+    </div>
   </div>
 )
 

@@ -8,13 +8,11 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <h1>Waassup!</h1>
+    <p>Welcome to my test of Gatsby with de-coupled Drupal.</p>
+    <div>
+      <Link to="/tea/">Go to Tea page</Link>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
