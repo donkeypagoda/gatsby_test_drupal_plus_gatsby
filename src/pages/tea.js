@@ -8,6 +8,7 @@ const TeaPage = ({data}) => (
     {data.allNodeTea.edges.map(({node}) => (
       <div>
         <h3>{node.title}</h3>
+        <div dangerouslySetInnerHTML={{ __html: node.body.value}} />
       </div>
     ))}
   </div>
