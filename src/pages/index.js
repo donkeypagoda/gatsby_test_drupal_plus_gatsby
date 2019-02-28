@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Base" keywords={[`gatsby`, `application`, `react`]} />
     <h1>Waassup!</h1>
     <p>Welcome to my test of Gatsby with de-coupled Drupal.</p>
     <div>
