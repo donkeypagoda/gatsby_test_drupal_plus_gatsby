@@ -6,9 +6,12 @@ const UserPage = ({data}) => (
   <div>
     <h1>Here's all the users on our awesome site!</h1>
     {data.allUserUser.edges.map(({node}) => (
+        <div>
           <div>
             <h3>{node.name}</h3>
           </div>
+
+        </div>
       ))}
     <div>
       <Link to="/">Back to home page</Link>
@@ -19,26 +22,28 @@ const UserPage = ({data}) => (
 export default UserPage;
 
 export const query  = graphql`
-  query allUserUser{
-    allUserUser {
-          edges {
-            node {
-              name
-    					id
-    					relationships{
-                file__file{
-                  localFile{
-                    id
-                    childImageSharp {
-                      fluid(maxWidth: 400, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                      }
+query allUserUser{
+  allUserUser {
+        edges {
+          node {
+            name
+            id
+            relationships{
+              file__file{
+                id
+                filename
+                localFile{
+                  id
+                  childImageSharp {
+                    fluid(maxWidth: 400, quality: 100) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }
               }
-            }
           }
         }
-  }
+      }
+    }
+}
 `
