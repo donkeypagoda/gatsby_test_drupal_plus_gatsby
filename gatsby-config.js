@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby + Drupal Test`,
     description: `A test run on using Gatsby with de-coupled Drupal.`,
-    author: `@gatsbyjs`,
+    author: `donkey pagoda`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
