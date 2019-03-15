@@ -1,6 +1,5 @@
 .teaStuff {
   align-items: center;
-  border: 1px solid blue;
 }
 .teaPics {
   margin-left: auto;
@@ -10,5 +9,4 @@
 .singleTea {
   padding: 25px;
   margin: 10px;
-  border: 1px solid red;
 }
